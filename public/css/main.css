@@ -1,0 +1,164 @@
+/* Darkest Teal Image Color #78a497; */
+/* lightest teal Image colour 	#bbd3c5 */
+
+/* Navigation bar section CSS */
+nav {
+  display: block;
+  background-image: linear-gradient(90deg, #78a497, #bbd3c5, #78a497);
+}
+
+nav a{
+  display: flex;  
+  color: #110011;
+  text-decoration: none;
+
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  padding: 1.5em;
+  margin-bottom: 0;
+}
+
+nav button {
+  text-emphasis: none;
+  text-decoration: none;
+  font-size: 32px;
+
+  background-color: transparent;
+  border: 0ch;
+  color: #F5F5F5;
+}
+
+nav li {
+  display: flex;
+}
+
+nav li:hover {
+  border: 2px solid #F5F5F5;
+}
+
+nav li:active {
+  background-color: #F5F5F5;
+  border: 2px solid #F5F5F5;
+}
+
+.homeButton {
+  flex-grow: 2;
+  text-align: start;
+}
+
+.spacing {
+  margin-right: 2ch;
+  margin-left: 2ch;
+}
+
+/* Header and hero section CSS */
+
+header {
+  background-image: url(https://picsum.photos/id/101/2621/1747);
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 0;
+  margin: 0em;
+  height: 80vh;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button {
+  background-color: transparent;
+  
+  border: 2px solid #F5F5F5;
+  
+  font-size: 32px;
+}
+
+header button a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #110011;
+}
+
+
+header img {
+  height: 600px;
+  max-width: 100ch;
+}
+
+header h1 {
+  margin-top: 0cm;
+  margin-bottom: 0em;
+}
+
+/* Main Section CSS */
+main {
+  margin: auto;
+  max-width: 100ch;
+}
+
+main div{
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+
+  background-color: #F5F5F5;
+}
+
+/* Gallery Styling */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery img {
+  margin: 0.5em;
+}
+
+/* Form styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+
+  padding-bottom: 5ch;
+  padding-top: 5ch;
+  
+  height: 50vh;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+/* Footer Section CSS */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: #78a497;
+}
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seafoam Travel Login</title>
+
+  <%- include('./partials/css-global'); %>
+
+</head>
+<body>
+
+  <% include ('./partials/nav.ejs') %>
+
+  <main>
+
+    <h1>Login</h1>
+
+    <form
+    action="branden.arthur13@gmail.com"
+    method="POST"
+    >
+    <label class="required">
+      Email:
+      <input type="email" id="mail" name="email">
+    </label>
+    <label class="required">
+      Password:
+      <input type="password" name="password" minlength="8" maxlength="25">
+    </label>
+    <input type="submit" value="Send">
+  </form>
+  </main>
+
+  <%- include('./partials/foot'); %>
+
+  <%- include('./partials/form-js.ejs'); %>
+
+</body>
+</html>

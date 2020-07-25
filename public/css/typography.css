@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oxygen', sans-serif;
+  color: #101218;
+  Font-Size: 46px;
+}
+
+header h1, header h2, header h3, header h4, header h5, header h6{
+  font-family: 'Oxygen', sans-serif;
+  color: #101218;
+  Font-Size: 46px;
+}
+
+button {
+  font-family: 'Oxygen', sans-serif;
+  color: #101218;
+  Font-Size: 46px;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  color: #101218;
+
+  margin: 0;
+
+  background-color: #F5F5F5;
+}
+
+form {
+  font-family: 'Noto Serif', serif;
+  position : relative;
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+
+  display  : grid;
+  grid-gap : 20px;
+  grid-template-columns : repeat(2, 1fr);
+  grid-template-rows    : 10em 1em 1em 1em;
+}
