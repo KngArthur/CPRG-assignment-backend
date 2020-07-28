@@ -59,7 +59,7 @@ app.get('/:id', function(request, response){
   Gallery.findOne({'id': request.params.id}, function(error, destination) {
 
     if (!destination) {
-      return response.render('Invalid ID.');
+      return response.render('404',{});
     }
 
     response.render('destination',destination);
