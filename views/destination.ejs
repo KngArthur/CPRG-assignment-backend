@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello <%= title %>!</title>
+  <title><%= title %></title>
   <%- include('./partials/css-global'); %>
 </head>
 <body>
   <%- include('./partials/nav'); %>
   <main class="full-vh center-items">
     <figure>
+      <h1><%= heading %> Getaway!</h1>
       <img src="http://picsum.photos/id/<%= id %>/600" alt="<%= title %>">
-      <figcaption>Hello <%= title %>!</figcaption>
+      <figcaption><%= title %></figcaption>
+
+      <p><%= description %></p>
     </figure>
+    <div></div>
   </main>
   <%- include('./partials/foot'); %>
 </body>
