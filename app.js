@@ -1,10 +1,10 @@
 // import modules
 const path = require('path');
-const express = require('express');
-//const destinations = require('./seeds/destinations.js');
+const express = require('express')
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
+//const destinations = require('./seeds/destinations.js');
 
 // Models
 const Gallery = require('./models/destination.js');
@@ -59,7 +59,7 @@ app.get('/:id', function(request, response){
   Gallery.findOne({'id': request.params.id}, function(error, destination) {
 
     if (!destination) {
-      return response.render('404',{});
+      return response.render('Invalid ID.');
     }
 
     response.render('destination',destination);
