@@ -1,7 +1,7 @@
 // import modules
 const path = require('path');
 const express = require('express');
-const destinations = require('./seeds/destinations.js');
+//const destinations = require('./seeds/destinations.js');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
