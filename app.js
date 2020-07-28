@@ -4,6 +4,7 @@ const express = require('express');
 const destinations = require('./seeds/destinations.js');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
+const cors = require('cors');
 
 // Models
 const Destination = require('./models/destination.js');
@@ -28,6 +29,13 @@ db.once('open', function() {
 // create express app
 const app = express();
 app.set('view engine', 'ejs');
+
+// cors origin URL - Allow inbound traffic from origin
+corsOptions = {
+  origin: "Your FrontEnd Website URL",
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors(corsOptions));
 
 // automatically check if requested file is found in /public
 // if yes, return that file as a response to the browser
