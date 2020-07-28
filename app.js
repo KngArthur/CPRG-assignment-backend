@@ -32,7 +32,7 @@ app.set('view engine', 'ejs');
 
 // cors origin URL - Allow inbound traffic from origin
 corsOptions = {
-  origin: "https://travel-experts44.herokuapp.com/",
+  origin: "https://travel-experts44.herokuapp.com",
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
