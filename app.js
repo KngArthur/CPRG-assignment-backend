@@ -7,7 +7,7 @@ const dotenv = require('dotenv').config();
 const cors = require('cors');
 
 // Models
-const Destination = require('./models/destination.js');
+const Gallery = require('./models/destination.js');
 
 // Hide creds from repo
 const mongoDB = process.env.MONGODB_URL;
@@ -32,7 +32,7 @@ app.set('view engine', 'ejs');
 
 // cors origin URL - Allow inbound traffic from origin
 corsOptions = {
-  origin: "Your FrontEnd Website URL",
+  origin: "https://travel-experts44.herokuapp.com/",
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 app.use(cors(corsOptions));
@@ -56,7 +56,7 @@ app.get('/register', function(request, response) {
 
 app.get('/:id', function(request, response){
 
-  Destination.findOne({'id': request.params.id}, function(error, destination) {
+  Gallery.findOne({'id': request.params.id}, function(error, destination) {
 
     if (!destination) {
       return response.render('404',{});
@@ -67,8 +67,8 @@ app.get('/:id', function(request, response){
 });
 
  app.get('/api/destination', function(request, response) {
-  Destination.find(function(error, destinations) {
-    response.json(destinations);
+  Gallery.find(function(error, result) {
+    response.json(result);
   });
 });
 
