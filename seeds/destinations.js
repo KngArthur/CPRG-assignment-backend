@@ -20,7 +20,7 @@ const destinations = [
     heading:      'Lakefront',
     title:        'Secluded Lakefront Cabin',
     source:       'Lorem Picsum',
-    fileName:     '1051-cabin.jpg',
+    fileName:     '1051-lakefront.jpg',
     description:  'A hike in, hike out trip to the wilderness',
   },
   {
